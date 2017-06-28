@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
+		<meta charset="utf-8">
+        <title>奚宁的个人主页</title>
+		<link href="css/xin.css" rel="stylesheet" media="all">
+		<style>
+			.section-wrapper {margin-top: -20px;padding-top: 20px;}
+			.section-wrapper:first-child .section {padding-top: 100px;}
+			#nav {background: #44F;left: 0;list-style: none;overflow: hidden;padding-top: 9px;position: fixed;right: 0;text-align: center;top: 0;}
+			#nav li {display: inline-block;	margin-bottom: 10px;}
+			#nav a {background: #44F;color: #aaa;display: block;padding: 10px;font-size: 18px;}
+			#nav a:hover {background: none;	color: #fff;}
+			#nav .current a {background: #fff;color: #aaa;}
+		</style>
+	</head>
+
     <body>
-        <p>
-            个人主页
-        </p>
+		<ul id="nav">
+			<li class="current"><a href="#basicInfo">基本信息</a></li>
+  			<li><a href="#eduInfo">教育背景</a></li>
+  			<li><a href="#workInfo">工作经历</a></li>
+  			<li><a href="#contactMe">与我联系</a></li>
+		</ul>
+		<div id="container">
+			<div class="section-wrapper" id="basicInfo">
+    			<div class="section">
+      				<h1>基本信息</h1>
+      				<p>This is my prosonal basic information</p>
+    			</div>
+  			</div>
+  			<div class="section-wrapper" id="eduInfo">
+    			<div class="section">
+    				<h1>教育背景</h1>
+    	  			<p>To account for the offset of the horizontal nav, add top negative margin and top padding. For example, the navigation on this page is 50px tall. So to each section, add a -50px top margin and 50px to offset the height of the nav. That means when you go to each section, it will scroll to the exact top of the section while accounting for the height of the nav.</p>
+    			</div>
+  			</div>
+  			<div class="section-wrapper" id="workInfo">
+   		 		<div class="section">
+    	  			<h1>工作经历</h1>
+    	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    			</div>
+  			</div>
+  			<div class="section-wrapper" id="contactMe">
+   		 		<div class="section">
+   		   			<h1>与我联系</h1>
+   		   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   		   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   		 		</div>
+  			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.nav.js"></script>
+		<script>
+			$(function(){
+				$('#nav').onePageNav();
+			});
+		</script>
     </body>
 </html>
